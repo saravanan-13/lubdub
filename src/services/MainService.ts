@@ -34,6 +34,10 @@ export class MainService {
   updateProfile(post_data): Observable<any> {
     return this.http.post( this.BASE_URL+ 'updateProfile', post_data).map(data => data.json()).catch(err => Observable.throw(err.json()));
   }
+  tablet(post_data): Observable<any> {
+    return this.http.post( this.BASE_URL+ 'meds', post_data).map(data => data.json()).catch(err => Observable.throw(err.json()));
+  }
+
 
   monitor(token):Observable<any> {
     return this.http.post( this.BASE_URL+ 'monitor',token).map(data => data.json()).catch(err => Observable.throw(err.json()));

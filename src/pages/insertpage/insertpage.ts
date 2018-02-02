@@ -22,15 +22,15 @@ export class InsertPage {
         this.token = this.shareService.getToken();
     this.item = this.navParams.get('param');
     if (this.item == 'BLOOD_TEST' ){
-       this.items=['haemoglobin','wbc','esr30','esr60','testdate'];
+       this.items=['haemoglobin (12.1-17.7 g/dl)','wbc (4500-11000)','esr30 (20mm/hr)','esr60 (15mm/hr)','testdate'];
 this.reportUpdate = [];
     }
  else if (this.item == 'BLOOD_SUGAR' ){
-      this.items=['fasting','pp','testdate'];
+      this.items=['fasting (70-99 mg/dl)','pp (<140mg/dl)','testdate'];
 this.reportUpdate = [];
     }
  else  if (this.item == 'CHOLESTROL' ){
-    this.items=['hdl','ldl','triglycerides','testdate'];
+    this.items=['hdl (>60 mg/dl)','ldl (<100 mg/dl)','triglycerides (<150 mg/dl)','testdate'];
 this.reportUpdate = [];
   }
  else if (this.item == 'URINE' ){
@@ -38,7 +38,7 @@ this.reportUpdate = [];
   this.reportUpdate = [];
 }
 else if (this.item == 'VITD' ){
-  this.items=['vitd','testdate'];
+  this.items=['vitd (20-50)','testdate'];
 this.reportUpdate = [];
 }
   }
