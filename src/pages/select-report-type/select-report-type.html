@@ -1,0 +1,40 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>select_report_type</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-item>
+            <ion-icon name="water" item-start></ion-icon>
+            Blood Test
+            <button ion-button clear item-right (click)="enterItem(items[0])">Enter</button>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="heart" item-start></ion-icon>
+            Blood Sugar
+            <button ion-button clear item-right (click)="enterItem(items[1])">Enter</button>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="leaf" item-start></ion-icon>
+            Cholestrol
+            <button ion-button clear item-right (click)="enterItem(items[2])">Enter</button>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="flask" item-start></ion-icon>
+            Urine Test
+            <button ion-button clear item-right (click)="enterItem(items[3])">Enter</button>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="leaf" item-start></ion-icon>
+            Vitamin D
+            <button ion-button clear item-right (click)="enterItem(items[4])">Enter</button>
+        </ion-item>
+    </ion-list>
+
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>insertpage</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let item of items;let i of index">
+            <ion-label floating>{{item}}</ion-label>
+            <ion-input type="text" [(ngModel)]="reportUpdate[i]" required></ion-input>
+        </ion-item>
+    </ion-list>
+
+
+
+    <div class="btn">
+        <button ion-button icon-right (click)="insertReport()">
+     Submit
+    <ion-icon name="home"></ion-icon>
+    </button>
+    </div>
+
+</ion-content>

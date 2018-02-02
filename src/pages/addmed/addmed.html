@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>addmed</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+          <ion-label stacked>Medicine Name</ion-label>
+          <ion-input type="text" [(ngModel)]="med" placeholder="Medicine Name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Time</ion-label>
+          <ion-input type="text" [(ngModel)]="time" placeholder="Time am/pm "></ion-input>
+        </ion-item>
+      </ion-list>
+    <span>
+          <ion-fab right side>
+              <button ion-fab color="primary" (click)="addMeds()"><ion-icon name="add"></ion-icon></button>
+          </ion-fab>
+    </span>
+    
+</ion-content>

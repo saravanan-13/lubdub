@@ -1,0 +1,43 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>createprofile</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+
+    <ion-list>
+
+        <ion-item>
+            <ion-input type="text" placeholder="Gender" name="gender" [(ngModel)]="registerCredentials.gender" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" placeholder="Age" name="age" [(ngModel)]="registerCredentials.age" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" placeholder="Weight" name="weight" [(ngModel)]="registerCredentials.weight" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" placeholder="Height" name="height" [(ngModel)]="registerCredentials.height" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" placeholder="Blood Group" name="bgroup" [(ngModel)]="registerCredentials.bgroup" required></ion-input>
+        </ion-item>
+
+    </ion-list>
+    <br><br><br><br>
+    <div class="btn">
+        <button ion-button icon-right (click)="createProfile()">
+    Submit
+    <ion-icon name="home"></ion-icon>
+  </button>
+    </div>
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Monitor</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let item of data" text-left><br>
+            <h2>{{item}}</h2><br>
+            <button ion-button clear item-right (click)="viewItem(item)">SHOW</button>
+        </ion-item>
+    </ion-list>
+</ion-content>
